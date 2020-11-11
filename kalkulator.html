@@ -37,52 +37,51 @@
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Ja sam iz Lozovca</h3>
-  <img src="images/ja.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ivo Gulin" width="350" height="350">
-  <h3>Volim šetati uz rijeku Krku</h3>
-</div>
-
 <!-- Second Container -->
 
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">O rijeci Krki</h3>
+  <h3 class="margin">Kalkulator</h3>
   <p>
-	  Rijeka Krka je kraška ljepotica, 
-	  ima izuzetne i jedinstvene slapove i jezera. <br>
-	  Izlet na rijeku Krku je nezaboravan i unikatan doživljaj. <br>
-	  Kada imate vrijemena preporučam rijeku Krku za odmor i razonodu. 
+	  Ovdje možete izračunati nešto
   </p>
-  <!--<a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Pretraži
-  </a>-->
+  <div class="row">
+  <div class="col-sm-4">
+  </div>
+    <div class="col-sm-4">
+	<form>
+		<div class="form-group">
+			<label for="vis">Unesi X</label>
+			<input type="number" class="form-control" id="var1">
+		</div>
+		<div class="form-group">
+			<label for="tez">Unesi Y</label>
+			<input type="number" class="form-control" id="var2">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="zbroji()">+</button>
+		<button type="button" class="btn btn-primary" onclick="oduzmi()">-</button>
+		<button type="button" class="btn btn-primary" onclick="pomnozi()">*</button>
+		<button type="button" class="btn btn-primary" onclick="podijeli()">/</button>
+		<button type="button" class="btn btn-primary" onclick="potenciraj()">^</button>
+		<button type="button" class="btn btn-primary" onclick="trokut()">Trokut</button>
+	<hr>
+		<p id="rez"></p>
+	</form> 
+    </div>
+	<div class="col-sm-4">
+	</div>
+  </div>
 </div>
 
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Rijeka Krka</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Najljepši slapovi u Europi</p>
-      <img src="images/krka1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Ekipa se kupa na slapovima</p>
-      <img src="images/krka2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Ekipa lovi ribu sa broda</p>
-      <img src="images/krka3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
+<!--<div class="container-fluid bg-3 text-center">    
+  
+</div>-->
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Napravljeno od Ivo Gulin<a href="http://cvijet.pondi.hr/"><br>www.cvijet.pondi.hr</a></p> 
 </footer>
-
+<script src="kalkulator.js"></script>
 </body>
 </html>
