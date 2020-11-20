@@ -40,3 +40,10 @@ function trokut()
 	var z = (x*x + y*y)**(1/2);
 	document.getElementById("rez").innerHTML = z;
 }
+function mod()
+{
+	var x = Number(document.getElementById("var1").value);
+	var y = Number(document.getElementById("var2").value);
+	var z = x%y;
+	document.getElementById("rez").innerHTML = z;
+}
