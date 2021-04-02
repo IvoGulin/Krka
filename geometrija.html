@@ -35,42 +35,39 @@
   </div>
 </nav>
 
+<!-- Second Container -->
+
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Kupanje na rijeci Krki</h3>
+  <h3 class="margin">Geometrija</h3>
   <p>
-	  Rijeka Krka je jako podesna za kupanje ljeti.<br>
-	  Na Krku dolaze kupači iz cijele zemlje da se kupaju u rijeci<br>
-	  Kada imate vrijemena preporučam rijeku Krku za odmor i razonodu. 
+	  Ovdje možete izračunati opseg i površinu kruga
   </p>
-  <!--<a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Pretraži
-  </a>-->
-</div>
-
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Kupanje na Krki</h3><br>
   <div class="row">
+  <div class="col-sm-4">
+  </div>
     <div class="col-sm-4">
-      <p>Kupanje pod slapom</p>
-      <img src="images/kupaci1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+	<form>
+		<div class="form-group">
+			<label for="vis">Unesi radijus</label>
+			<input type="number" class="form-control" id="var1">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="opseg()">opseg</button>
+		<button type="button" class="btn btn-primary" onclick="povrsina()">površina</button>
+	<hr>
+		Opseg: <p id="rez1"></p>
+		Površina: <p id="rez2"></p>
+	</form> 
     </div>
-    <div class="col-sm-4"> 
-      <p>Ekipa se kupa na slapovima</p>
-      <img src="images/kupaci2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Ljepotice na Krki</p>
-      <img src="images/kupaci3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
+	<div class="col-sm-4">
+	</div>
   </div>
 </div>
+
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Napravljeno od Ivo Gulin<a href="http://cvijet.pondi.hr/"><br>www.cvijet.pondi.hr</a></p> 
 </footer>
-
+<script src="geometrija.js"></script>
 </body>
 </html>
