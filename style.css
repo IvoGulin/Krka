@@ -35,5 +35,5 @@ body {
     letter-spacing: 2px;
   }
   .navbar-nav  li a:hover {
-    color: #0000FF !important;
+    color: #FF0000 !important;
   }

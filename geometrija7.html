@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>River Krka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Rijeka Krka</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="index.html">Početna</a></li>
+        <li><a href="kupanje.html">Kupanje</a></li>
+        <li><a href="ribolov.html">Ribolov</a></li>
+        <li><a href="odmor.html">Odmor</a></li>
+		<li><a href="aplikacije.html">Aplikacije</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Second Container -->
+
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Geometrija 7</h3>
+  <p>
+	  Ovdje možete izračunati površina i volumen kugle
+  </p>
+  <div class="row">
+  <div class="col-sm-4">
+  </div>
+    <div class="col-sm-4">
+	<form>
+		<div class="form-group">
+			<label for="vis">Unesi radijus</label>
+			<input type="number" class="form-control" id="var1">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="povrsina()">površina</button>
+		<button type="button" class="btn btn-primary" onclick="volumen()">volumen</button>
+	<hr>
+		Površina: <p id="rez1"></p>
+		Volumen: <p id="rez2"></p>
+	</form> 
+    </div>
+	<div class="col-sm-4">
+	</div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Napravljeno od Ivo Gulin<a href="http://cvijet.pondi.hr/"><br>www.cvijet.pondi.hr</a></p> 
+</footer>
+<script src="geometrija7.js"></script>
+</body>
+</html>
